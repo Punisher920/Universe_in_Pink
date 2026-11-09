@@ -1,0 +1,159 @@
+{
+  "source_commit": "5e693458de04f641e192d0cb898f0276cfd782b6",
+  "snapshot_sha256": "d914210ef327df780097f862928714ac8593afbfbf971e9431d93adbc2963458",
+  "source_files": 609,
+  "media_files": 30,
+  "verified_media": [
+    {
+      "path": "app/public/assets/apple-touch-icon.png",
+      "bytes": 21547,
+      "sha256": "df56b034fb280a02333c6541c48f3b21f6711fd1deb9543f20e0f2dec197a1f3"
+    },
+    {
+      "path": "app/public/assets/bag.webp",
+      "bytes": 110842,
+      "sha256": "3c72d3abf378194c333db2a3749a281963e6b2dd883e7d78135c35d10a9f4467"
+    },
+    {
+      "path": "app/public/assets/beauty.webp",
+      "bytes": 35026,
+      "sha256": "c1a95ce505922ecda380b0425ee759a291cf7150c7ecdeba468d1f62756cf632"
+    },
+    {
+      "path": "app/public/assets/blouse.webp",
+      "bytes": 58596,
+      "sha256": "2aead242b54bc05e94a9beeb8316893ab3b35170b97c5aba9db239cad8ff8497"
+    },
+    {
+      "path": "app/public/assets/favicon-16.png",
+      "bytes": 389,
+      "sha256": "a735388313cd2b986422a574a0fbd6ac56730af0110b74b6c807339f72e2c7d7"
+    },
+    {
+      "path": "app/public/assets/favicon-32.png",
+      "bytes": 1020,
+      "sha256": "7aaa2433273b9ca67bc10d6ff25d19824d7748601f9458d32d269dac70c8f7f3"
+    },
+    {
+      "path": "app/public/assets/favicon.ico",
+      "bytes": 2702,
+      "sha256": "6313da602033e075f72ea8da9c4e835ce000c145d3759448faf5a5963a4b3510"
+    },
+    {
+      "path": "app/public/assets/home.webp",
+      "bytes": 61330,
+      "sha256": "e9be93499bd656f27272db85735887264505b6eb0610eebe3dcad90fc997c292"
+    },
+    {
+      "path": "app/public/assets/icon-192.png",
+      "bytes": 24341,
+      "sha256": "45bb5897fe14433c166f349d08d8b40adfb76e8d67b30be579b00e4758c67446"
+    },
+    {
+      "path": "app/public/assets/icon-512.png",
+      "bytes": 153191,
+      "sha256": "2a5fc80b41c71fdc007954c35c5e55177c7671da523acba96ff1834e679d8253"
+    },
+    {
+      "path": "app/public/assets/icon-bag.png",
+      "bytes": 8828,
+      "sha256": "64ff8c676695212b1bac1f427b0d869de64cb87bece71f479152ee707551c86f"
+    },
+    {
+      "path": "app/public/assets/icon-beauty.png",
+      "bytes": 8515,
+      "sha256": "fc4435ec0f8ec8b80b29eb5b736232bf0bb92caaa4b079e69e9a3ed6c31e6213"
+    },
+    {
+      "path": "app/public/assets/icon-dress.png",
+      "bytes": 10072,
+      "sha256": "f980bb357c9c087c970055119a32e1a5b8b6d1cb78045bd8fdd4b8d2c1ac1fbe"
+    },
+    {
+      "path": "app/public/assets/icon-handbag.png",
+      "bytes": 9814,
+      "sha256": "c9d2c543be0ee1d9d9449320f14954ec640d772f610797e60be9e1cffda81746"
+    },
+    {
+      "path": "app/public/assets/icon-heart.png",
+      "bytes": 9213,
+      "sha256": "6655706adf456d1c3bf2d58a1908f96e03b354dc786d6803b667e28bf6ca2070"
+    },
+    {
+      "path": "app/public/assets/icon-home.png",
+      "bytes": 10303,
+      "sha256": "a17605af87d74ebf898a0412e1bd505070c40e456163b3c79ad1e9d7e8beb5a4"
+    },
+    {
+      "path": "app/public/assets/icon-maskable.png",
+      "bytes": 153191,
+      "sha256": "2a5fc80b41c71fdc007954c35c5e55177c7671da523acba96ff1834e679d8253"
+    },
+    {
+      "path": "app/public/assets/living.webp",
+      "bytes": 127858,
+      "sha256": "614ab842d9638c6977561f89c6d8880d4c9c0213a5df4bebef449b5e1253f52f"
+    },
+    {
+      "path": "app/public/assets/logo.png",
+      "bytes": 191418,
+      "sha256": "08019165304f236c2f4caff8f182a92b881b17cbddf0d574c364b3a40a2c48a0"
+    },
+    {
+      "path": "app/public/assets/world/orbit.mp4",
+      "bytes": 620157,
+      "sha256": "0067d71943b97b50fb2a605e61e5063a928d8027ae7ba365e307555007d580a2"
+    },
+    {
+      "path": "app/public/assets/world/scene-01-mobile-poster.png",
+      "bytes": 924978,
+      "sha256": "79941180a5fe57648b5d8e9e842493d79a27a90490ff12408574091efa0ddaf2"
+    },
+    {
+      "path": "app/public/assets/world/scene-01-mobile.mp4",
+      "bytes": 7117025,
+      "sha256": "c039cb51bc441761f418bc90e5ef329c4a02c92ab199222dee7d054a7b8470eb"
+    },
+    {
+      "path": "app/public/assets/world/scene-01-poster.png",
+      "bytes": 1511404,
+      "sha256": "0940dc3fe4737ce624b0c4e3a236a79ba46de5f7a2e541fb02fb1e8f68c1b68e"
+    },
+    {
+      "path": "app/public/assets/world/scene-01.mp4",
+      "bytes": 11357477,
+      "sha256": "5d58edaf6ab9e3f98d639a61bef0bc1c6bffba5837760e97eb8855a40de70576"
+    },
+    {
+      "path": "app/public/presets/cover.png",
+      "bytes": 138583,
+      "sha256": "64bc7ebc2913c50b1f480fbc3065d10d2a217a5ab395e32ee439efd768191b09"
+    },
+    {
+      "path": "app/public/presets/explain.png",
+      "bytes": 116634,
+      "sha256": "2716aa8e7cac992eeabfb1245088d0d3b1a438b61c2ecdd97dd96fbc5b912ff5"
+    },
+    {
+      "path": "app/public/presets/how-product-works.png",
+      "bytes": 119030,
+      "sha256": "5d86176ff3d9bda8e68b17bb9a23612e52b3e5cb0a49a36c02f912e567500570"
+    },
+    {
+      "path": "app/public/presets/hyper-motion.png",
+      "bytes": 138488,
+      "sha256": "f6b9176c62d8be28637fbc606e69477702f9be05ff1496085268d1ae74f6c769"
+    },
+    {
+      "path": "refs/catalog.png",
+      "bytes": 1075915,
+      "sha256": "760ad125d45fd2abead0ef625a58e83fda115b246ea81e266df956cbfecfb284"
+    },
+    {
+      "path": "refs/collections.png",
+      "bytes": 1165331,
+      "sha256": "7d33b2ae5d4db09a40368cbb823daf0e89926a30c086589d46480b20365c684c"
+    }
+  ],
+  "note": "Source snapshot for retrieval. Hostinger adaptation is a separate step."
+}
