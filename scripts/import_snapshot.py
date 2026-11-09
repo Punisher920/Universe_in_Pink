@@ -7,6 +7,11 @@ raw = zlib.decompress(base64.b64decode((ROOT / ".transfer/pink-snapshot.b64").re
 if hashlib.sha256(raw).hexdigest() != EXPECTED:
     raise SystemExit("Source snapshot checksum mismatch")
 snapshot = json.loads(raw)
+# Preserve the originating platform CI as reference, without enabling it here.
+for entry in snapshot["entries"]:
+    if entry["path"].startswith(".github/workflows/"):
+        entry["archived_original_path"] = entry["path"]
+        entry["path"] = "docs/original-platform-workflows/" + pathlib.PurePosixPath(entry["path"]).name + ".txt"
 overrides = json.loads((ROOT / ".transfer/media-sources.json").read_text())
 for media in snapshot["media"]:
     media["url"] = overrides[media["path"]]
@@ -75,6 +80,8 @@ Current site: https://univers-in-pink.higgsfield.app
 The original app uses React 19, TanStack Start, and the Higgsfield Cloudflare Worker scaffold, with vendored workspace packages. It is not yet a Hostinger-ready Node.js deployment. Preserve this copy before adapting the runtime.
 
 The package manifest and lockfile are inside the app folder. Use the pinned dependencies there. The originating platform build passed after the entrance fix; a separate GitHub/Hostinger build has not been validated.
+
+Original platform CI workflows are preserved as text under docs/original-platform-workflows instead of being activated in this repository.
 
 ## Store status
 
