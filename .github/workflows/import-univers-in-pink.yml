@@ -1,0 +1,31 @@
+name: Import complete Univers in Pink project
+on:
+  push:
+    branches: [main]
+    paths: ['.transfer/pink-snapshot.b64']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: import-univers-in-pink
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore source and verify media
+        run: python3 scripts/import_snapshot.py
+      - name: Save complete project
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git add --force --pathspec-from-file=.transfer/imported-paths.txt --pathspec-file-nul
+          if git diff --cached --quiet; then
+            echo "Project already imported."
+          else
+            git commit -m "Import complete storefront source and verified cinematic assets"
+            git push origin HEAD:main
+          fi
