@@ -2,7 +2,7 @@ name: Import complete Univers in Pink project
 on:
   push:
     branches: [main]
-    paths: ['.transfer/pink-snapshot.b64']
+    paths: ['.transfer/**', 'scripts/import_snapshot.py', '.github/workflows/import-univers-in-pink.yml']
   workflow_dispatch:
 permissions:
   contents: write

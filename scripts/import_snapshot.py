@@ -7,6 +7,9 @@ raw = zlib.decompress(base64.b64decode((ROOT / ".transfer/pink-snapshot.b64").re
 if hashlib.sha256(raw).hexdigest() != EXPECTED:
     raise SystemExit("Source snapshot checksum mismatch")
 snapshot = json.loads(raw)
+overrides = json.loads((ROOT / ".transfer/media-sources.json").read_text())
+for media in snapshot["media"]:
+    media["url"] = overrides[media["path"]]
 def destination(relative):
     p = pathlib.PurePosixPath(relative)
     if p.is_absolute() or ".." in p.parts or ".git" in p.parts:
@@ -26,7 +29,8 @@ for item in snapshot["entries"]:
 def fetch_media(item):
     u = urllib.parse.urlparse(item["url"])
     if u.scheme != "https" or u.hostname not in {
-        "univers-in-pink.higgsfield.app", "d8j0ntlcm91z4.cloudfront.net"
+        "univers-in-pink.higgsfield.app", "d8j0ntlcm91z4.cloudfront.net",
+        "d2ol7oe51mr4n9.cloudfront.net"
     }:
         raise ValueError("Unexpected media source")
     request = urllib.request.Request(item["url"], headers={"User-Agent": "UniversInPink-SourceExport/1.0"})
