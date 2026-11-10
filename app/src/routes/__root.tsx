@@ -21,7 +21,7 @@ import { pinkPageGround } from "../scroll-scrub-scenes";
 declare const __HF_DESIGN_INSPECTOR__: boolean;
 
 // Built-in defaults for any field that isn't set in app-meta.json.
-const DEFAULT_TITLE = "Univers in Pink";
+const DEFAULT_TITLE = "Universe in Pink";
 const DEFAULT_DESCRIPTION = "Everything you love. In pink.";
 
 type AppMeta = {
@@ -80,7 +80,7 @@ function buildHead(meta: AppMeta) {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title },
       { name: "description", content: description },
-      { name: "author", content: "Univers in Pink" },
+      { name: "author", content: "Universe in Pink" },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },

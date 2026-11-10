@@ -1,4 +1,4 @@
-# Univers in Pink
+# Universe in Pink
 
 Complete source snapshot of the cinematic storefront for UniverseinPink.com.
 
