@@ -1,4 +1,4 @@
-# Univers in Pink
+# Universe in Pink
 Design read: A joyful, cinematic all-pink boutique for women who want everyday objects with personality.
 Concept spine: A planet where everything is pink, entered through a tactile celestial portal.
 Delivery tier: cinema, cinematic entrance with interactive planet and camera journey.
